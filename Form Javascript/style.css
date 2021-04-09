@@ -1,0 +1,13 @@
+﻿
+#error{
+    background-color: rgba(255, 0, 0, 0.76);
+    color:rgba(41, 1, 1, 0.76)
+}
+#sucses{
+    background-color: rgb(95, 209, 95);
+    color:rgb(7, 71, 7)
+}
+#betalingswijze{
+    background-color: rgb(116, 116, 231);
+    color: rgb(2, 2, 112);
+}

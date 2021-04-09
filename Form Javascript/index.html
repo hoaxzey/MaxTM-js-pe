@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <script defer src="scriptje.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+   
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-8 col-md-8 col-xl-8">
+                <form id="form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Voornaam</label>
+                            <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputNaam4">Naam</label>
+                            <input type="text" class="form-control" id="naam" placeholder="Uw naam">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="GebruikersNaam4">Gebruikersnaam</label>
+                            <div class="mb-3">
+                                <div class="input-group is-invalid">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
+                                    </div>
+                                    <input id="gebruikersnaam" type="text" class="form-control" aria-describedby="validatedInputGroupPrepend"  placeholder="u9120402">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputEmail1">E-mailadres</label>
+                            <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Wachtwoord</label>
+                                <input type="password" class="form-control" id="wachtwoord">
+                                <small>Je wachtwoord moet minstens 8 tekens lang zijn</small>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Herhaal wachtwoord</label>
+                                <input type="password" class="form-control" id="herhaalWachtwoord">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="inputAddress">Adres</label>
+                        <input type="text" class="form-control" id="adres" placeholder="Uw adres en huisnummer">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputLand">Land</label>
+                            <select id="land" class="form-control" placeholder="Kies een land">
+                                <option selected>Belgium</option>
+                                <option>The Netherlands</option>
+                                <option>Germany</option>
+                                <option>Luxembourgh</option>
+                                <option>Hungary</option>
+                                <option>Poland</option>
+                                <option>Cyprus</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Provincie</label>
+                            <select id="provincie" class="form-control" placeholder="Kies een provincie">
+                                <option selected>Antwerpen</option>
+                                <option>Limburg</option>
+                                <option>Vlaams-Brabant</option>
+                                <option>Waals-Brabant</option>
+                                <option>West-Vlaanderen</option>
+                                <option>Oost-Vlaanderen</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputPostcode">Postcode</label>
+                            <input type="text" class="form-control" id="postcode">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-sm-6 col-xl-6">
+                            <h2>Hou me op de hoogte</h2>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Inschrijven voor onze nieuwsbrief
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Ik ga akkoord met de algemene voorwaarden.
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6 col-xl-6">
+                            <h2>Betaling</h2>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="betaling">
+                                <label class="form-check-label" for="gridCheck">
+                                    Banking app
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="betaling">
+                                <label class="form-check-label" for="gridCheck">
+                                    Overschrijving
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="betaling">
+                                <label class="form-check-label" for="gridCheck">
+                                    Visa card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" id="betaling">
+                                <label class="form-check-label" for="gridCheck">
+                                    PayPal
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%">Wave your magic wand</button>
+                </form>
+
+
+            </div>
+            <div class="col">
+                 
+                <div id="error">
+                    <h2>yikes,errors...</h2>
+                    <p id="errortext"></p>
+                </div>
+                <div id="sucses">
+                    <h2>Yes, sucses!</h2>
+                    <p id="sucses"></p>
+                </div>
+                <div id="betalingswijze">
+                    <h2>Betalingswijze</h2>
+                    <p id="betalingswijze"></p>
+                </div>
+                
+            </div>
+            
+        </div>
+        </div>
+    
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
